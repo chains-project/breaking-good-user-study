@@ -13,7 +13,7 @@ In this study, we will explore how to identify compilation failures using the re
 In this repository, you will find the following resources in each Case folder:
 1. Java project
    Folder that contains the Java project that has compilation failures.
-2. Maven Logs maven.log
-   - The `maven.log file contains Maven-generated logs during the build process of the original project. Participants are required to identify and count the number of breakages based on this file.
+2. Maven Logs `maven.log`:
+   - The `maven.log` file contains Maven-generated logs during the build process of the original project. Participants are required to identify and count the number of breakages based on this file.
 3. Explanations `Explanation.md`:
    - The `Explanation.md` file provides detailed explanations for each breaking update that was present in the project. Participants should use this explanation to identify each failure.
