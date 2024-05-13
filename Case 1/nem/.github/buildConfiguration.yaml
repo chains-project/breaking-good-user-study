@@ -1,0 +1,28 @@
+builds:
+  - name: NEM Core
+    path: core
+
+  - name: NEM Deploy
+    path: deploy
+    dependsOn:
+      - core
+
+  - name: NEM Peer
+    path: peer
+    dependsOn:
+      - core
+
+  - name: NEM Infrastructure Server
+    path: nis
+    dependsOn:
+      - core
+      - deploy
+      - peer
+
+customBuilds:
+  - name: Nightly Job
+    jobName: nightlyJob
+    scriptPath: .github/jenkinsfile/nightlyBuild.groovy
+    triggers:
+      - type: cron
+        schedule: '@midnight'

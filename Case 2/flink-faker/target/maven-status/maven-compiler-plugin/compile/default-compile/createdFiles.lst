@@ -1,0 +1,7 @@
+com/github/knaufk/flink/faker/FlinkFakerTableSource$1.class
+com/github/knaufk/flink/faker/FlinkFaker.class
+com/github/knaufk/flink/faker/FlinkFakerLookupFunction.class
+com/github/knaufk/flink/faker/FlinkFakerTableSourceFactory.class
+com/github/knaufk/flink/faker/FakerUtils$1.class
+com/github/knaufk/flink/faker/FlinkFakerTableSource.class
+com/github/knaufk/flink/faker/FakerUtils.class
