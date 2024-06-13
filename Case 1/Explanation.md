@@ -20,6 +20,24 @@ CI detected that the dependency upgrade from version **flyway-core-3.2.1** to **
         ```
      </details>
    * <details>
+        <summary>Constructor <b>org.flywaydb.core.Flyway()</b> which has been <b></b> in the new version of the dependency</summary>
+            
+        * <details>
+          <summary>The failure is identified from the logs generated in the build process. </summary>
+          
+            *   >[[ERROR] /nem/nis/src/main/java/org/nem/specific/deploy/appconfig/NisAppConfig.java:[108,57] constructor Flyway in class org.flywaydb.core.Flyway cannot be applied to given types;<br>&nbsp;&nbsp;&nbsp;&nbsp;  required: org.flywaydb.core.api.configuration.Configuration
+                found: no arguments
+                reason: actual and formal argument lists differ in length
+](https://github.com/chains-project/breaking-good/actions/runs/8110103454/job/22166641300#step:4:2063)
+            *   An error was detected in line 108 which is making use of an outdated API.
+             ``` java
+             108   new org.flywaydb.core.Flyway();
+            ```
+
+          </details>
+            
+     </details>  
+   * <details>
         <summary>Method <b>setDataSource(javax.sql.DataSource)</b> which has been <b>removed</b> in the new version of the dependency</summary>
             
         * <details>
